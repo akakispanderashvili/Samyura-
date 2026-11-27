@@ -5,16 +5,24 @@ It has plain HTML, CSS and a little JavaScript, and needs no build step.
 
 ## Structure
 ```
-index.html              Home: hero, product cards, sweet-potato section, why bio, journal, contact
-articles/               Journal articles (sweet potatoes, why bio, seasonal eating)
+index.html              Home (English): hero, product cards, sweet-potato section, why bio, journal, contact
+articles/               Journal articles in English (sweet potatoes, why bio, seasonal eating)
+ka/                     Georgian version (ka/index.html and ka/articles/)
 css/style.css           All styles. Colours and fonts are set at the top (:root)
-js/main.js              Mobile menu, product filter, scroll animations
+js/main.js              Mobile menu, language-aware labels, product filter, scroll animations
 images/photos/          Photos (WebP), from Wikimedia Commons for now
 credits.html            Photo credits, required by the photo licences
 ```
 
 ## Open it locally
 Double-click `index.html`, or run `python3 -m http.server` and visit http://localhost:8000.
+
+## Languages
+Every page has an English and a Georgian version, linked by the ქარ / EN button in the header.
+When you change text, change it in both files.
+
+## Social links
+Facebook, Instagram and TikTok links are in the contact section and the footer of every page.
 
 ## Things to replace
 Search for `REPLACE` in the files.

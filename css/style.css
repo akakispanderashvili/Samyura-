@@ -20,8 +20,8 @@
   --line: #E6DCC4;
 
   /* Type */
-  --font-head: "Fraunces", Georgia, "Noto Serif Georgian", serif;
-  --font-body: "Outfit", system-ui, "Noto Sans Georgian", sans-serif;
+  --font-head: "Fraunces", "Noto Serif Georgian", Georgia, serif;
+  --font-body: "Outfit", "Noto Sans Georgian", system-ui, sans-serif;
 
   /* Spacing & shape */
   --space-1: .25rem;
@@ -364,3 +364,48 @@ p { margin: 0 0 var(--space-3); }
 .credits-table td { vertical-align: middle; font-size: .9rem; }
 .credits-table td:last-child, .credits-table th:last-child { text-align: left; }
 @media (max-width: 600px) { .credits-table td:first-child, .credits-table th:first-child { display: none; } }
+
+/* ---------- Language switch ---------- */
+.site-nav { margin-left: auto; }
+.lang-switch {
+  display: inline-grid; place-items: center;
+  min-width: 44px; height: 36px; padding: 0 .7rem;
+  border: 2px solid var(--ink); border-radius: var(--radius-pill);
+  font-weight: 600; font-size: .85rem; color: var(--ink); text-decoration: none;
+  background: var(--white);
+}
+.lang-switch:hover { background: var(--yellow); }
+@media (max-width: 760px) {
+  .js .lang-switch { margin-left: auto; }
+}
+
+/* ---------- Social icons ---------- */
+.icon { width: 1.1em; height: 1.1em; flex: none; }
+.social-links { list-style: none; display: flex !important; gap: .6rem; padding: 0; margin: 0; }
+.social-links a {
+  display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%;
+  background: rgba(255,255,255,.1); color: var(--white);
+  transition: background .15s ease, color .15s ease;
+}
+.social-links a:hover { background: var(--yellow); color: var(--ink); }
+.social-links .icon { width: 20px; height: 20px; }
+.follow-title { margin-top: var(--space-4); }
+
+/* ---------- Georgian typography ---------- */
+/* Georgian is normally written without capitals, so skip uppercase styling. */
+html[lang="ka"] .eyebrow,
+html[lang="ka"] .band-word,
+html[lang="ka"] .band-caption,
+html[lang="ka"] .badge,
+html[lang="ka"] .product-season,
+html[lang="ka"] .split-text h3,
+html[lang="ka"] .split-text .sub,
+html[lang="ka"] .article-card .tag,
+html[lang="ka"] .site-footer h4 { text-transform: none; letter-spacing: .02em; }
+html[lang="ka"] .band-word { font-size: clamp(3rem, 13vw, 9rem); line-height: 1.1; }
+html[lang="ka"] .hero-content { max-width: 54rem; }
+html[lang="ka"] .hero h1 { font-size: clamp(2.1rem, 5.4vw, 4rem); }
+html[lang="ka"] .section-title { font-size: clamp(1.6rem, 3.6vw, 2.3rem); }
+html[lang="ka"] .split-text h3 { font-size: 1.25rem; }
+html[lang="ka"] .prose h1, html[lang="ka"] .article-hero h1 { font-size: clamp(1.9rem, 5vw, 3.2rem); }
+html[lang="ka"] .nav-list a { font-size: .9rem; }
