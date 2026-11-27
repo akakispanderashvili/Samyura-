@@ -9,7 +9,8 @@ index.html              Home: hero, product cards, sweet-potato section, why bio
 articles/               Journal articles (sweet potatoes, why bio, seasonal eating)
 css/style.css           All styles. Colours and fonts are set at the top (:root)
 js/main.js              Mobile menu, product filter, scroll animations
-images/                 Illustrations (SVG). Replace them with real farm photos
+images/photos/          Photos (WebP), from Wikimedia Commons for now
+credits.html            Photo credits, required by the photo licences
 ```
 
 ## Open it locally
@@ -21,7 +22,7 @@ Search for `REPLACE` in the files.
 - The product list and seasons (confirm with the farm)
 - The farming practices in "What bio means", which must be true for this farm
 - The farmer quote in `articles/sweet-potato.html`
-- Real photos: put JPG/WebP files in `images/` and update each `src`
+- Photos: the current ones are free stock photos from Wikimedia Commons. Swap in the farm's own photos with the same file names in `images/photos/`, then remove those rows from `credits.html`
 
 ## Put it online (free)
 **GitHub Pages:** go to repo Settings → Pages → Deploy from branch → choose the branch and the `/ (root)` folder.
